@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATP Finals - Turin & Milan</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; color:#222; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#0b0b0c; color:white; position:sticky; top:0; }
+    header nav a { color:white; margin:0 1rem; text-decoration:none; }
+    .hero { height:70vh; background:url('https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:white; padding:2rem; }
+    .hero h1 { font-size:3rem; text-shadow:0 0 10px rgba(0,0,0,0.6); }
+    .section { padding:3rem 1.5rem; max-width:1100px; margin:auto; }
+    .cities { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+    .cities div img { width:100%; border-radius:12px; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:1.5rem; }
+    .card { background:#f1f1f1; padding:1.5rem; border-radius:12px; }
+    .cta { background:#1e90ff; color:white; padding:3rem 1.5rem; text-align:center; }
+    .timeline { border-left:3px solid #1e90ff; margin-left:1rem; padding-left:1.5rem; }
+    .timeline-item { margin-bottom:1.5rem; }
+    footer { background:#0b0b0c; color:white; padding:2rem; text-align:center; margin-top:2rem; }
+    @media(max-width:768px) { .cities { grid-template-columns:1fr; } header nav { display:none; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ATP Finals Trip</div>
+  <nav>
+    <a href="#viaggio">Il Viaggio</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#timeline">Itinerario</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>ATP Finals - Turin & Milan</h1>
+  <p>14–19 Novembre — Damiano & Miky</p>
+</section>
+
+<section id="viaggio" class="section">
+  <h2>Il Nostro Viaggio</h2>
+  <div class="cities">
+    <div>
+      <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&q=60" alt="Torino" />
+      <h3>Torino (14–16 Novembre)</h3>
+      <p>Tennis alle ATP Finals, cultura piemontese, storia, architettura e buon cibo.</p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1505842465776-3bfd188f53a5?auto=format&fit=crop&w=800&q=60" alt="Milano" />
+      <h3>Milano (16–19 Novembre)</h3>
+      <p>Moda, design, aperitivi milanesi e passeggiate in una delle città più vive d'Europa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="highlights" class="section">
+  <h2>Highlights del Viaggio</h2>
+  <div class="cards">
+    <div class="card">🎾 Sessione ATP Finals</div>
+    <div class="card">🍝 Cena piemontese</div>
+    <div class="card">🛍️ Shopping a Milano</div>
+    <div class="card">📸 Fotografie e ricordi</div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Scopri il Programma Completo</h2>
+  <p>Tutto il nostro itinerario giorno per giorno</p>
+</section>
+
+<section id="timeline" class="section">
+  <h2>Timeline Itinerario</h2>
+  <div class="timeline">
+    <div class="timeline-item"><strong>14 Nov:</strong> Arrivo a Torino + prima passeggiata</div>
+    <div class="timeline-item"><strong>15 Nov:</strong> ATP Finals + cena tipica</div>
+    <div class="timeline-item"><strong>16 Nov:</strong> Transfer a Milano + aperitivo</div>
+    <div class="timeline-item"><strong>17 Nov:</strong> Esplorazione centro</div>
+    <div class="timeline-item"><strong>18 Nov:</strong> Musei o shopping</div>
+    <div class="timeline-item"><strong>19 Nov:</strong> Rientro</div>
+  </div>
+</section>
+
+<footer>
+  <p>ATP Finals Trip — Damiano & Miky</p>
+</footer>
+
+</body>
+</html>
