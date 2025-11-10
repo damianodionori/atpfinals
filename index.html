@@ -380,5 +380,32 @@
     <p>© 2025 — Damiano & Miky • ATP Finals Trip</p>
   </footer>
 
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top" aria-label="Torna in cima">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Back to top button functionality
+    const backToTopButton = document.getElementById('backToTop');
+
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+
+    // Scroll to top when button is clicked
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
 </body>
 </html>
