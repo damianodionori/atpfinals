@@ -755,6 +755,9 @@ footer {
   opacity: 1;
   visibility: visible;
   transform: translateY(0) scale(1);
+}
+
+.back-to-top.show:not(:hover) {
   animation: float 3s ease-in-out infinite;
 }
 
@@ -907,9 +910,16 @@ footer {
   .back-to-top {
     bottom: 1.5rem;
     left: 1.5rem;
-    width: 45px;
-    height: 45px;
-    font-size: 1.1rem;
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+    border-width: 2px;
+  }
+
+  .back-to-top::after {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    bottom: calc(100% + 10px);
   }
 }
 
